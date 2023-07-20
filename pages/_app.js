@@ -1,5 +1,4 @@
 import "../styles/globals.css";
-import NoSSR from "react-no-ssr";
 import Footer from "../components/Footer/Footer";
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
@@ -18,13 +17,11 @@ function MyApp({ Component, pageProps }) {
     <>
       <div className="overflow-y-hidden overflow-x-hidden  z-0">
         <AnimatePresence exitBeforeEnter>
-          <NoSSR>
-            <div key={asPath}>
-              <Nav handleCartClick={handleCartClick} test="a" />
-              <Component {...pageProps} />
-              <Footer />
-            </div>
-          </NoSSR>
+          <div key={asPath}>
+            <Nav handleCartClick={handleCartClick} test="a" />
+            <Component {...pageProps} />
+            <Footer />
+          </div>
 
           {/* adding the whatsapp button as CTA */}
           <a
