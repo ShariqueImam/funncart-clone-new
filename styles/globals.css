@@ -7,7 +7,9 @@
     --color-secondary: 111 114 0;
   }
 }
-
+body {
+  font-family: "Jost", sans-serif;
+}
 ke-y-animation {
   animation: shakeY 1s infinite;
   position: relative;
