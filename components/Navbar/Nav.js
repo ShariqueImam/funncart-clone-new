@@ -69,7 +69,7 @@ const Nav = (props) => {
               className="text-sm font-semibold leading-6 text-gray-900"
             >
               <section
-                className="flex items-center justify-center"
+                className="flex items-center justify-center cursor-pointer"
                 onClick={handleCartClick}
               >
                 <svg

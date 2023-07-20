@@ -2,9 +2,10 @@ import React from "react";
 import ShopNow from "../../components/ShopNow/ShopNow";
 import Category from "../../components/HomeClone/Category";
 import Trending from "../../components/HomeClone/Trending";
+import Animator from "../../components/UI/Animator";
 const index = () => {
   return (
-    <div>
+    <Animator>
       <ShopNow
         heading={"New Arrivals"}
         description={
@@ -13,7 +14,7 @@ const index = () => {
       />
       <Category />
       <Trending />
-    </div>
+    </Animator>
   );
 };
 

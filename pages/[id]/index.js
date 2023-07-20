@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import client from "../api/client";
 import Nav from "../../components/Navbar/Nav";
 import ProductReviews from '../../components/ProductDescription/ProductReviews'
+import Animator from '../../components/UI/Animator'
 const style = {
   wrapper: "",
 };
@@ -31,7 +32,7 @@ const index = () => {
     getProduct();
   }, [router.isReady]);
   return (
-    <>
+    <Animator>
       <Nav />
       <ProductDescription />
       <ProductReviews />
@@ -57,7 +58,7 @@ const index = () => {
           category={ProductData[0].category}
         />
       )} */}
-    </>
+    </Animator>
   );
 };
 

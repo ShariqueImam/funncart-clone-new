@@ -2,10 +2,10 @@ import React from "react";
 import ShopNow from "../../../components/ShopNow/ShopNow";
 import Nav from "../../../components/Navbar/Nav";
 import ProductList from "../../../components/ProductList/ProductList";
-
+import Animator from "../../../components/UI/Animator";
 const index = () => {
   return (
-    <div>
+    <Animator>
       <Nav />
       <ShopNow
         heading={"Workspace"}
@@ -14,7 +14,7 @@ const index = () => {
         }
       />
       <ProductList />
-    </div>
+    </Animator>
   );
 };
 
