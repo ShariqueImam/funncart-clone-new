@@ -2,7 +2,7 @@
 import React from "react";
 import client from "./api/client";
 // import Home from "../../components/Home/Home";
-import Main from '../components/HomeClone/Main'
+import Main from "../components/HomeClone/Main";
 import Animator from "../components/UI/Animator";
 import Products from "../components/Products/Products";
 const style = {};

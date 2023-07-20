@@ -1,17 +1,16 @@
 import "../styles/globals.css";
-import Head from "next/head";
+import NoSSR from "react-no-ssr";
 import Footer from "../components/Footer/Footer";
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { AnimatePresence } from "framer-motion";
 import { BsWhatsapp } from "react-icons/bs";
 import Nav from "../components/Navbar/Nav";
-import Cart from "../components/Cart/Cart";
-import Cookies from "js-cookie";
 function MyApp({ Component, pageProps }) {
   const { asPath } = useRouter();
   const [CartClick, setCartClick] = useState(false);
   const handleCartClick = () => {
+    // console.log("a");
     // setCartClick(true);
   };
 
@@ -19,12 +18,13 @@ function MyApp({ Component, pageProps }) {
     <>
       <div className="overflow-y-hidden overflow-x-hidden  z-0">
         <AnimatePresence exitBeforeEnter>
-          <div key={asPath}>
-            <Cart CartClick={true} />
-            <Nav handleCartClick={handleCartClick} />
-            <Component {...pageProps} />
-            <Footer />
-          </div>
+          <NoSSR>
+            <div key={asPath}>
+              <Nav handleCartClick={handleCartClick} test="a" />
+              <Component {...pageProps} />
+              <Footer />
+            </div>
+          </NoSSR>
 
           {/* adding the whatsapp button as CTA */}
           <a

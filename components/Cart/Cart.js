@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
@@ -30,9 +30,15 @@ const products = [
   // More products...
 ];
 
-export default function Example({ CartClick }) {
-  const [open, setOpen] = useState(CartClick);
-
+export default function Example(props) {
+  const [open, setOpen] = useState(props.CartClick);
+  useEffect(() => {
+    setOpen(props.CartClick);
+  }, [props.CartClick, open]);
+  const closeModal = () => {
+    props.handleCartClickClose();
+    setOpen(false);
+  };
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-10" onClose={setOpen}>
@@ -71,7 +77,7 @@ export default function Example({ CartClick }) {
                           <button
                             type="button"
                             className="-m-2 p-2 text-gray-400 hover:text-gray-500"
-                            onClick={() => setOpen(false)}
+                            onClick={closeModal}
                           >
                             <span className="sr-only">Close panel</span>
                             <XMarkIcon className="h-6 w-6" aria-hidden="true" />
@@ -154,7 +160,7 @@ export default function Example({ CartClick }) {
                             <button
                               type="button"
                               className="font-medium text-indigo-600 hover:text-indigo-500"
-                              onClick={() => setOpen(false)}
+                              onClick={closeModal}
                             >
                               Continue Shopping
                               <span aria-hidden="true"> &rarr;</span>

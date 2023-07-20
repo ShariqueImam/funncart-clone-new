@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Cookies from "js-cookie";
+import Cart from "../Cart/Cart";
 const navigation = [
   { name: "Shop now", href: "/shop-now" },
   { name: "About us", href: "/about" },
@@ -11,13 +12,26 @@ const navigation = [
 ];
 const Nav = (props) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const handleCartClick = () => {};
+  const [CartClick, setCartClick] = useState(false);
+  const handleCartClick = () => {
+    setCartClick(true);
+  };
+  const handleCartClickClose = () => {
+    setCartClick(false);
+  };
+  // console.log(CartClick)
   return (
-    <div>
+    <div className="">
       {" "}
-      <header className="absolute inset-x-0 top-0 z-50">
+      <div className="z-0">
+        <Cart
+          CartClick={CartClick}
+          handleCartClickClose={handleCartClickClose}
+        />
+      </div>
+      <header className="absolute inset-x-0 top-0 z-10">
         <nav
-          className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+          className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 z-0"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
