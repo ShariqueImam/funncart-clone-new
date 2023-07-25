@@ -31,11 +31,16 @@ const incentives = [
 
 export default function Example() {
   return (
-    <div className="bg-gray-50">
-      <div className="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
+    <div
+      className="my-20 py-8"
+      style={{
+        background: "linear-gradient(135deg, #fffef4 0%, #fff3ed 100%) ",
+      }}
+    >
+      <div className="mx-auto max-w-2xl px-4 sm:px-6 sm:py-8 lg:max-w-7xl lg:px-8">
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">
-            Our Features
+          <h2 className="text-xl font-medium leading-16 tracking-tight text-[#fe5900]">
+            Features
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Why choose us
@@ -44,11 +49,7 @@ export default function Example() {
         <div className="grid grid-cols-1 gap-y-12 mt-16 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8">
           {incentives.map((incentive) => (
             <div key={incentive.name} className="flex flex-col items-center">
-              <img
-                src={incentive.imageSrc}
-                alt=""
-                className="h-24 w-auto"
-              />
+              <img src={incentive.imageSrc} alt="" className="h-24 w-auto" />
               <h3 className="mt-6 text-sm font-medium text-gray-900">
                 {incentive.name}
               </h3>

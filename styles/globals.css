@@ -1,27 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   :root {
     --color-primary: 68 64 60;
     --color-secondary: 111 114 0;
   }
 }
+
 body {
   font-family: "Jost", sans-serif;
 }
+
 ke-y-animation {
   animation: shakeY 1s infinite;
   position: relative;
 }
+
 @keyframes shakeY {
   0% {
     transform: scale(0.9);
   }
+
   100% {
     transform: scale(1.1);
   }
 }
+
 .border-move-animation::after {
   content: "";
   display: block;
@@ -36,6 +42,7 @@ ke-y-animation {
   width: 100%;
   transition: width 0.3s;
 }
+
 .border-move-animation1::after {
   content: "";
   display: block;
@@ -73,6 +80,7 @@ ke-y-animation {
   background: #1e293b;
   transition: width 0.3s;
 }
+
 .content {
   position: relative;
   width: 90%;
@@ -80,6 +88,7 @@ ke-y-animation {
   margin: auto;
   overflow: hidden;
 }
+
 .content .content-overlay {
   /* background: radial-gradient(rgba(30,41,59, 0.6), rgba(30,41,59, 0.6)); */
   position: absolute;

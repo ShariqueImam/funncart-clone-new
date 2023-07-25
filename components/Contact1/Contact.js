@@ -18,11 +18,7 @@ const Contact = () => {
     <div className={style.wrapper}>
       <Header headingText="CONTACT" />
       <div className={style.contactContainer}>
-        <h2
-          className={style.smallHeading}
-        >
-          Contact Details
-        </h2>
+        <h2 className={style.smallHeading}>Contact Details</h2>
         {/* <div className={style.singleContactContainer} style={{ fontFamily: 'Poppins, sans-serif' }}>
             <HiOutlineLocationMarker className="text-3xl text-primary bg-green-300 rounded-full p-1 mx-4"/>
             <p className={style.para}>28 Green Tower, Street Name,Islamabad, Pakistan</p>

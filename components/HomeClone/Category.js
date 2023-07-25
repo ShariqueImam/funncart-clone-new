@@ -35,11 +35,11 @@ const categories = [
 
 export default function Example() {
   return (
-    <div className="bg-white my-6 md:my-5">
+    <div className="bg-white my-12 md:my-12">
       {/* Category section */}
       <section
         aria-labelledby="category-heading"
-        className="pt-24 sm:pt-32 xl:mx-auto xl:max-w-7xl xl:px-8"
+        className="pt-8 sm:pt-8 xl:mx-auto xl:max-w-7xl xl:px-8"
       >
         <div className="px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 xl:px-0">
           <h2
@@ -50,7 +50,7 @@ export default function Example() {
           </h2>
           <a
             href="#"
-            className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block"
+            className="hidden text-md font-medium text-[#fe5900] hover:text-[#fe5900] sm:block"
           >
             Browse all categories
             <span aria-hidden="true"> &rarr;</span>

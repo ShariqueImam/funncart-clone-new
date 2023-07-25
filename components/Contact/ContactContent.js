@@ -3,7 +3,6 @@ import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import { useState } from "react";
 
 export default function Example() {
-
   return (
     <div className="mt-16 md:mt-24">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
@@ -39,7 +38,7 @@ export default function Example() {
               </svg>
             </div> */}
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-              Get in touch
+              Get in touchs
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Proin volutpat consequat porttitor cras nullam gravida at. Orci
@@ -194,7 +193,20 @@ export default function Example() {
             <div className="mt-8 flex justify-end">
               <button
                 type="submit"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md px-8 py-3 mt-12 text-lg font-medium text-white shadow-xl transition-all duration-500 ease-in-out"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(to right, #fe8c00 0%, #f83600 51%, #fe8c00 100%)",
+                  backgroundSize: "200% auto",
+                  color: "white",
+                  borderRadius: "10px",
+                }}
+                onMouseEnter={(e) =>
+                  (e.target.style.backgroundPosition = "right center")
+                }
+                onMouseLeave={(e) =>
+                  (e.target.style.backgroundPosition = "left center")
+                }
               >
                 Send message
               </button>
