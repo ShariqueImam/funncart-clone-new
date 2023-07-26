@@ -64,7 +64,7 @@ export default function Example() {
           </h2>
           <a
             href="#"
-            className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block"
+            className="hidden text-md font-medium text-[#fe5900] hover:text-[#fe5900] sm:block"
           >
             See Everything <span aria-hidden="true"> &rarr;</span>
           </a>

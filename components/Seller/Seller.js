@@ -9,7 +9,7 @@ export default function Example() {
         <div className="relative px-6 pb-20 pt-12 sm:pt-12 lg:static lg:px-8 lg:py-24   ">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-             Contact Us
+              Become a Seller
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Proin volutpat consequat porttitor cras nullam gravida at. Orci
@@ -164,9 +164,22 @@ export default function Example() {
             <div className="mt-8 flex justify-end">
               <button
                 type="submit"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md px-8 py-3 mt-12 text-lg font-medium text-white shadow-xl transition-all duration-500 ease-in-out"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(to right, #fe8c00 0%, #f83600 51%, #fe8c00 100%)",
+                  backgroundSize: "200% auto",
+                  color: "white",
+                  borderRadius: "10px",
+                }}
+                onMouseEnter={(e) =>
+                  (e.target.style.backgroundPosition = "right center")
+                }
+                onMouseLeave={(e) =>
+                  (e.target.style.backgroundPosition = "left center")
+                }
               >
-                Send message
+                Submit
               </button>
             </div>
           </div>
