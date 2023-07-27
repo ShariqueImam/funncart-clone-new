@@ -51,14 +51,14 @@ const navigation = {
 
 export default function Example() {
   return (
-    <footer className="bg-white">
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-4 sm:py-4 lg:px-8">
+    <footer className="bg-white font-jakarta py-8">
+      <div className="mx-auto max-w-xl px-6 sm:px-8">
         <nav
-          className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
+          className="flex flex-col sm:flex-row justify-center sm:justify-between space-y-6 sm:space-y-0 sm:space-x-12"
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
-            <div key={item.name} className="pb-6">
+            <div key={item.name} className="text-center sm:text-left">
               <a
                 href={item.href}
                 className="text-sm leading-6 text-gray-600 hover:text-gray-900"

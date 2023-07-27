@@ -97,14 +97,14 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white h-screen flex flex-col justify-center items-center pt-16">
+    <div className="bg-white h-screen flex flex-col justify-center items-center pt-16 font-jakarta">
       <div className="py-16 sm:py-16 lg:pb-8 flex flex-col items-center gap-y-16">
         <img
           src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
           alt="App screenshot"
           width={400}
           height={200}
-          className="rounded-md shadow-lg rounded-xl"
+          className="shadow-lg rounded-xl"
         />
         <div className="mx-auto max-w-2xl text-center">
           <h1 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl">

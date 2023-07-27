@@ -45,7 +45,7 @@ export default function Example() {
                   <blockquote className="text-gray-900 my-4 md:my-5 text-center">
                     <p>{`“${testimonial.body}”`}</p>
                   </blockquote>
-                  <figcaption className="mt-6 flex flex-col items-center">
+                  <figcaption className="mt-4 flex flex-col items-center">
                     <div className="font-semibold text-gray-900 text-lg">
                       {testimonial.author.name}
                     </div>
