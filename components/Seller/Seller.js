@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function Example() {
   return (
-    <div className="mt-16 md:mt-24">
+    <div className="mt-16 md:mt-24 font-jakarta">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pb-20 pt-12 sm:pt-12 lg:static lg:px-8 lg:py-24   ">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
@@ -12,9 +12,8 @@ export default function Example() {
               Become a Seller
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Proin volutpat consequat porttitor cras nullam gravida at. Orci
-              molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
-              Arcu sed malesuada et magna.
+              Unlock new opportunities to showcase and sell your unique
+              creations through our platform.
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
               <div className="flex gap-x-4">
@@ -26,9 +25,8 @@ export default function Example() {
                   />
                 </dt>
                 <dd>
-                  545 Mavis Island
-                  <br />
-                  Chicago, IL 99191
+                  Reach a wider audience and sell your art and handicrafts like
+                  never before
                 </dd>
               </div>
               <div className="flex gap-x-4">
@@ -40,11 +38,9 @@ export default function Example() {
                   />
                 </dt>
                 <dd>
-                  <a
-                    className="hover:text-gray-900"
-                    href="tel:+1 (555) 234-5678"
-                  >
-                    +1 (555) 234-5678
+                  <a className="hover:text-gray-900">
+                    Earn competitive compensation that truly reflects the value
+                    of your creative work
                   </a>
                 </dd>
               </div>
@@ -57,11 +53,9 @@ export default function Example() {
                   />
                 </dt>
                 <dd>
-                  <a
-                    className="hover:text-gray-900"
-                    href="mailto:hello@example.com"
-                  >
-                    hello@example.com
+                  <a className="hover:text-gray-900">
+                    Experience true artistic freedom as we handle inventory,
+                    marketing, delivery, and more for you
                   </a>
                 </dd>
               </div>
@@ -148,7 +142,7 @@ export default function Example() {
                   htmlFor="products"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
-                  Your Products
+                  What you do
                 </label>
                 <div className="mt-2.5">
                   <textarea
@@ -161,10 +155,10 @@ export default function Example() {
                 </div>
               </div>
             </div>
-            <div className="mt-8 flex justify-end">
+            <div className=" mt-8 flex justify-start">
               <button
                 type="submit"
-                className="rounded-md px-8 py-3 mt-12 text-lg font-medium text-white shadow-xl transition-all duration-500 ease-in-out"
+                className="rounded-md px-8 py-3  text-lg font-medium text-white shadow-xl transition-all duration-500 ease-in-out"
                 style={{
                   backgroundImage:
                     "linear-gradient(to right, #fe8c00 0%, #f83600 51%, #fe8c00 100%)",

@@ -21,7 +21,7 @@ const Nav = (props) => {
   };
   // console.log(CartClick)
   return (
-    <div className="">
+    <div className="font-jakarta">
       {" "}
       <div className="z-0">
         <Cart
@@ -29,7 +29,7 @@ const Nav = (props) => {
           handleCartClickClose={handleCartClickClose}
         />
       </div>
-      <header className="absolute inset-x-0 top-0 z-10">
+      <header className="absolute inset-x-0 top-0 z-10 ">
         <nav
           className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 z-0"
           aria-label="Global"
