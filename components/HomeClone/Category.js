@@ -35,7 +35,7 @@ const categories = [
 
 export default function Example() {
   return (
-    <div className="bg-white my-12 md:my-12">
+    <div className="bg-white my-12 md:my-12 font-jakarta">
       {/* Category section */}
       <section
         aria-labelledby="category-heading"

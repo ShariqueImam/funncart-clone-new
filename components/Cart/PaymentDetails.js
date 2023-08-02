@@ -102,7 +102,7 @@ const PaymentDetails = (props) => {
         {/* adding the online payment option */}
       </form>
       <div className={style.onlinePayment}>
-        <section className="flex flex w-[75%] md:w-[50%] mx-auto my-3">
+        <section className="flex w-[75%] md:w-[50%] mx-auto my-3">
           <input
             type="radio"
             id="COD"
@@ -113,7 +113,7 @@ const PaymentDetails = (props) => {
           />
           <label htmlFor="COD">Cash on Delivery</label>
         </section>
-        <section className="flex flex w-[75%] md:w-[50%] mx-auto my-3">
+        <section className="flex w-[75%] md:w-[50%] mx-auto my-3">
           <input
             type="radio"
             id="online"
@@ -150,7 +150,7 @@ const PaymentDetails = (props) => {
         style={{ fontFamily: "Poppins, sans-serif" }}
       >
         <p className={style.para}>Order Total </p>
-        {props.total > 2998  ? (
+        {props.total > 2998 ? (
           <p className={style.amount}>Rs. {Math.round(+props.total)}</p>
         ) : (
           <p className={style.amount}>Rs. {Math.round(+props.total + 199)}</p>

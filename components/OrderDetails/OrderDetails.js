@@ -299,11 +299,24 @@ export default function Example() {
                   </dd>
                 </div>
               </dl>
-              <Link href={'/order-successful'}>
+              <Link href={"/order-successful"}>
                 <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
                   <button
                     type="submit"
-                    className="w-full rounded-md border border-transparent bg-indigo-600 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50"
+                    className="w-full rounded-md border transition-all duration-500 ease-in-out border-transparent px-4 py-3 text-base font-medium text-white shadow-sm hover:shadow-none focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50"
+                    style={{
+                      backgroundImage:
+                        "linear-gradient(to right, #fe8c00 0%, #f83600 51%, #fe8c00 100%)",
+                      backgroundSize: "200% auto",
+                      color: "white",
+                      borderRadius: "10px",
+                    }}
+                    onMouseEnter={(e) =>
+                      (e.target.style.backgroundPosition = "right center")
+                    }
+                    onMouseLeave={(e) =>
+                      (e.target.style.backgroundPosition = "left center")
+                    }
                   >
                     Confirm order
                   </button>

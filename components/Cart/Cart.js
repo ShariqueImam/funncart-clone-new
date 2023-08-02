@@ -123,7 +123,7 @@ export default function Example(props) {
                                     <div className="flex">
                                       <button
                                         type="button"
-                                        className="font-medium  text-[#FD5900]  text-[#f96e23]"
+                                        className="font-medium  text-[#f96e23]"
                                       >
                                         Remove
                                       </button>
@@ -143,13 +143,25 @@ export default function Example(props) {
                         <p>$262.00</p>
                       </div>
                       <p className="mt-0.5 text-sm text-gray-500">
-                        Shipping and taxes calculated at checkout.
+                        Delivery fee will be added on checkout.
                       </p>
                       <div className="mt-6">
                         <a
                           href="/order-details"
-                          className="w-full flex items-center justify-center rounded-md border border-transparent bg-gradient-to-r from-yellow-400 via-red-500 to-yellow-400 px-6 py-3 text-base font-medium text-white shadow-xl hover:bg-gradient-to-l hover:from-yellow-400 hover:via-red-500 hover:to-yellow-400 transition-all duration-500 ease-in-out"
-                          style={{ borderRadius: "10px" }}
+                          className="w-full flex items-center transition-all duration-500 ease-in-out justify-center rounded-md border border-transparent px-6 py-3 text-base font-medium text-white shadow-xl hover:shadow-none transition-all duration-500 ease-in-out"
+                          style={{
+                            backgroundImage:
+                              "linear-gradient(to right, #fe8c00 0%, #f83600 51%, #fe8c00 100%)",
+                            backgroundSize: "200% auto",
+                            color: "white",
+                            borderRadius: "10px",
+                          }}
+                          onMouseEnter={(e) =>
+                            (e.target.style.backgroundPosition = "right center")
+                          }
+                          onMouseLeave={(e) =>
+                            (e.target.style.backgroundPosition = "left center")
+                          }
                         >
                           Checkout
                         </a>
@@ -161,7 +173,7 @@ export default function Example(props) {
                             or
                             <button
                               type="button"
-                              className="ml-2 font-medium text-[#FD5900] hover:text-indigo-500"
+                              className="ml-2 font-medium text-[#FD5900] hover:text-[#ff8f53]"
                               onClick={closeModal}
                             >
                               Continue Shopping
