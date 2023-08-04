@@ -172,7 +172,7 @@ export default function Example() {
                 </div>
               </div>
             </div>
-            <div className="mt-8 flex justify-end">
+            <div className="">
               <button
                 type="submit"
                 className="rounded-md px-8 py-3 mt-12 text-lg font-medium text-white shadow-xl transition-all duration-500 ease-in-out"

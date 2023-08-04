@@ -31,8 +31,8 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <div className="bg-white">
-      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:grid lg:max-w-7xl lg:grid-cols-12 lg:gap-x-8 lg:px-8 lg:py-32">
+    <div className="bg-white font-jakarta">
+      <div className="mx-auto max-w-2xl px-4 py-12 sm:px-6 sm:py-12 lg:grid lg:max-w-7xl lg:grid-cols-12 lg:gap-x-8 lg:px-8 lg:py-12">
         <div className="lg:col-span-4">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">
             Customer Reviews
@@ -105,16 +105,19 @@ export default function Example() {
             </dl>
           </div>
 
-          <div className="mt-10">
-            {/* <h3 className="text-lg f    ont-medium text-gray-900">Share your thoughts</h3>
+          {/* <div className="mt-10">
+            <h3 className="text-lg f    ont-medium text-gray-900">
+              Share your thoughts
+            </h3>
             <p className="mt-1 text-sm text-gray-600">
-              If you’ve used this product, share your thoughts with other customers
-            </p> */}
+              If you’ve used this product, share your feedback with us on
+              Instagram
+            </p>
 
             <p className="mt-6 inline-flex w-full items-center justify-center rounded-md border border-gray-300 bg-white px-8 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 sm:w-auto lg:w-full">
               Write a review
             </p>
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-16 lg:col-span-7 lg:col-start-6 lg:mt-0">

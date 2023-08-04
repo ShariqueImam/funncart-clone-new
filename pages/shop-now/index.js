@@ -7,9 +7,9 @@ const index = () => {
   return (
     <Animator>
       <ShopNow
-        heading={"New Arrivals"}
+        heading={"Shop Now"}
         description={
-          "Thoughtfully designed objects for the workspace, home, and travel."
+          "Shop from our extensive variety of authentic local products"
         }
       />
       <Category />

@@ -110,7 +110,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-gray-100 mt-28 py-20">
+    <div className="bg-gray-100 mt-20 py-20 font-jakarta">
       <main className="isolate">
         {/* Content section */}
         <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">

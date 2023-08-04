@@ -28,7 +28,7 @@ export default function Example() {
         <div>
           <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-32 xl:gap-x-24">
             <div className="lg:col-start-2">
-              <h1 className="text-sm font-medium text-indigo-600">
+              <h1 className="text-sm font-medium text-[#fe5900]">
                 Payment successful
               </h1>
               <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
@@ -39,10 +39,10 @@ export default function Example() {
                 tight and we’ll send you confirmation very soon!
               </p>
 
-              <dl className="mt-16 text-sm font-medium">
+              {/* <dl className="mt-16 text-sm font-medium">
                 <dt className="text-gray-900">Tracking number</dt>
                 <dd className="mt-2 text-indigo-600">51547878755545848512</dd>
-              </dl>
+              </dl> */}
 
               <ul
                 role="list"
@@ -76,14 +76,14 @@ export default function Example() {
                 </div>
 
                 <div className="flex justify-between">
-                  <dt>Shipping</dt>
+                  <dt>Delivery feee</dt>
                   <dd className="text-gray-900">$8.00</dd>
                 </div>
 
-                <div className="flex justify-between">
+                {/* <div className="flex justify-between">
                   <dt>Taxes</dt>
                   <dd className="text-gray-900">$6.40</dd>
-                </div>
+                </div> */}
 
                 <div className="flex items-center justify-between border-t border-gray-200 pt-6 text-gray-900">
                   <dt className="text-base">Total</dt>
@@ -104,7 +104,7 @@ export default function Example() {
                     </address>
                   </dd>
                 </div>
-                <div>
+                {/* <div>
                   <dt className="font-medium text-gray-900">
                     Payment Information
                   </dt>
@@ -130,13 +130,13 @@ export default function Example() {
                       <p>Expires 12 / 21</p>
                     </div>
                   </dd>
-                </div>
+                </div> */}
               </dl>
 
               <div className="mt-16 border-t border-gray-200 py-6 text-right">
                 <a
                   href="#"
-                  className="text-sm font-medium text-indigo-600 hover:text-indigo-500"
+                  className="text-sm font-medium text-[#fe5900] hover:text-[#ff8f53]"
                 >
                   Continue Shopping
                   <span aria-hidden="true"> &rarr;</span>

@@ -8,10 +8,8 @@ const index = () => {
     <Animator>
       <Nav />
       <ShopNow
-        heading={"Workspace"}
-        description={
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus hic molestias alias atque, doloremque velit soluta."
-        }
+        heading={"Table top"}
+        description={"This page contains all the items related to table top"}
       />
       <ProductList />
     </Animator>
